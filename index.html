@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Convert Temperatures</title>
+    <!-- linking the JavaScript and css file -->
+    <script src="convert_temp.js"></script>
+    <link rel="stylesheet" href="convert_temp.css" />
+    <!-- adding favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+
+  <body>
+    <h1>JavaScript</h1>
+    <main>
+      <!-- headings and text boxes for inputs -->
+      <h1>Convert temperatures</h1>
+      <div>
+        <input
+          type="radio"
+          name="conversion_type"
+          id="to_celsius"
+          checked
+        />Fahrenheit to Celsius
+      </div>
+      <div>
+        <input type="radio" name="conversion_type" id="to_fahrenheit" />Celsius
+        to Fahrenheit
+      </div>
+      <div>
+        <label id="degree_label_1">Enter F degrees:</label>
+        <input type="text" id="degrees_entered" />
+      </div>
+      <div>
+        <label id="degree_label_2">Degrees Celsius:</label>
+        <input type="text" id="degrees_computed" disabled />
+      </div>
+      <div>
+        <label></label>
+        <input type="button" id="convert" value="Convert" />
+        <p id="to_celsius"></p>
+      </div>
+      <small>&copy; "Shivasav/8895801" 2023</small>
+      <br />
+    </main>
+  </body>
+</html>
